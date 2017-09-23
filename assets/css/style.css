@@ -1,0 +1,15 @@
+body {
+	background-image: url("../images/background.jpg");
+	background-size: cover;
+}
+
+.jumbotron {
+	margin-top: 25px;
+	margin-left:  55px;
+	margin-right: 55px;
+	background-color:  brown;
+	color:  white;
+	text-align:  center;
+	border-radius: 10px;
+}
+

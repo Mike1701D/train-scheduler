@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang ="en">
+
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta charset="utf-8">
+    
+    <title>Sheldon Cooper Loves Trains</title>
+    
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+	<link rel="stylesheet" href="assets/css/style.css">
+    
+    <!-- Firebase Reference -->
+    <script src="https://www.gstatic.com/firebasejs/4.3.1/firebase.js"></script>
+    
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery.js"></script>
+
+    <!-- Link to Moment.js should go here -->
+    <script src="https://cdn.jsdelivr.net/momentjs/2.12.0/moment.min.js"></script>
+</head>
+
+<body>
+	<div class="jumbotron">
+        <h1>Sheldon Cooper's Train Scheduler</h1>
+        <h2>Sheldon Cooper Loves Trains</h2>
+    </div>
+
+    <br>
+
+    <div class="container">
+    	<div class="row">
+    		<div class="col-md-10 col-md-offset-1 col-lg-10 col-lg-offset-1">
+    			<div class="panel panel-primary">
+    				<div class="panel-heading">
+    					<h3 class="panel-title">Current Train Schedule</h3>
+					</div>
+					<div class="panel-body">
+						<table id="sched-for-trains">
+							<tr>
+								<th class="col-xs-3">Train Name</th>
+								<th class="col-xs-2">Destination</th>
+								<th class="col-xs-2">Frequency (min)</th>
+								<th class="col-xs-2">Next Arrival</th>
+								<th class="col-xs-2">Minutes Away</th>
+							</tr>
+						</table>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<br><br>
+
+	<div class="container">
+		<div class="row">
+			<div class="col-md-10 col-md-offset-1 col-lg-10 col-lg-offset-1">
+				<div class="panel panel-primary">
+					<div class="panel-heading">
+						<h3 class="panel-title">Add Train</h3>
+					</div>
+					<div class="panel-body">
+						<form role="form">
+							<div>
+								<label for="text">Train Name</label>
+								<input type="text" class="form-control" id="user-input-name">
+							</div>
+							<div>
+								<label for="text">Destination</label>
+								<input type="text" class="form-control" id="user-input-dest">
+							</div>
+							<div>
+								<label for="text">First Train Time (HH:mm - military time)</label>
+								<input type="text" class="form-control" id="user-input-first">
+							</div>
+							<div>
+								<label for="comment">Frequency (min)</label>
+								<input type="text" class="form-control" id="user-input-freq">
+							</div>
+							<br>
+							<button type="submit" class="btn btn-primary" id="user-add-train">Submit</button>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+	<br>
+	</div>
+
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script type="text/javascript" src="assets/javascript/app.js"></script>
+
+</body>
+</html>
